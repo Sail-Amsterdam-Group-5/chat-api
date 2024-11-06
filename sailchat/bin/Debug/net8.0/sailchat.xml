@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>sailchat</name>
+    </assembly>
+    <members>
+        <member name="M:sailchat.Controllers.ChatsController.GetChat(System.String)">
+            <summary>
+            Get chat by ID
+            </summary>
+            <remarks>
+            Sample chatId: chat-1
+            </remarks>
+        </member>
+        <member name="M:sailchat.Controllers.ChatsController.CreateChat(sailchat.Models.DTOs.CreateChatRequest)">
+            <summary>
+            Create a new chat
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/chats
+                {
+                    "type": "Group",
+                    "participantIds": ["user-1", "user-2"],
+                    "adminIds": ["user-1"]
+                }
+            </remarks>
+        </member>
+        <member name="M:sailchat.Controllers.ChatsController.AddUserToChat(System.String,System.String)">
+            <summary>
+            Add user to chat
+            </summary>
+        </member>
+        <member name="M:sailchat.Controllers.MessagesController.GetChatMessages(System.String)">
+            <summary>
+            Get messages for a specific chat
+            </summary>
+            <remarks>
+            Sample chatId: chat-1
+            </remarks>
+        </member>
+        <member name="M:sailchat.Controllers.MessagesController.SendMessage(sailchat.Models.DTOs.CreateMessageRequest)">
+            <summary>
+            Send a new message
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/messages
+                {
+                    "senderId": "user-1",
+                    "chatId": "chat-1",
+                    "content": "Hello team!",
+                    "type": "Text"
+                }
+            </remarks>
+        </member>
+        <member name="M:sailchat.Controllers.MessagesController.DeleteMessage(System.String)">
+            <summary>
+            Delete a message (within 15-minute window)
+            </summary>
+        </member>
+        <member name="M:sailchat.Controllers.UsersController.GetUser(System.String)">
+            <summary>
+            Get user by ID
+            </summary>
+            <remarks>
+            Sample userId: user-1
+            </remarks>
+        </member>
+        <member name="M:sailchat.Controllers.UsersController.CreateUser(sailchat.Models.DTOs.CreateUserRequest)">
+            <summary>
+            Create a new user
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/users
+                {
+                    "notificationEnabled": true
+                }
+            </remarks>
+        </member>
+        <member name="M:sailchat.Controllers.UsersController.UpdateNotifications(System.String,System.Boolean)">
+            <summary>
+            Update user notification settings
+            </summary>
+        </member>
+        <member name="M:sailchat.Controllers.UsersController.GetUserChats(System.String)">
+            <summary>
+            Get user's active chats
+            </summary>
+        </member>
+    </members>
+</doc>

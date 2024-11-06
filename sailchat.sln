@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sailchat", "sailchat\sailchat.csproj", "{3948B95B-2979-4197-851A-C2918C234649}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3948B95B-2979-4197-851A-C2918C234649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3948B95B-2979-4197-851A-C2918C234649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3948B95B-2979-4197-851A-C2918C234649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3948B95B-2979-4197-851A-C2918C234649}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3351B883-4B27-45B8-B0B6-07E3A2AE9171}
+	EndGlobalSection
+EndGlobal
